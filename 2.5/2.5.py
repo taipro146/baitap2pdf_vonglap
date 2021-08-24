@@ -1,4 +1,3 @@
-
 from collections import Counter
 n = str(input('nhập chuỗi '))
 list_1 = list(n)                    # chuyển n thành list
@@ -13,12 +12,12 @@ print('số lần lặp lại của tù đầu tiên là ',nums)
 cut_1 = list_1[:a]
 cut_2 = list_1[(c-a):(c+1)]
 for i in range(0,(c-a-1),1):
-    if list_1[i] != list_1[i+a]:
-        print('không phải CHUỔI lặp ')
+    if list_1[i] != list_1[i+a] and list_1[:a] != list_1[(c-a):(c+1)]:
+        print('không phải chuổi lặp')
         break
-    elif list_1[i] == list_1[i+a] and list_1[:a] == list_1[(c-a):(c+1)] :
+    elif list_1[i] == list_1[i+a] and list_1[:a] == list_1[(c-a):(c+1)] and nums == 1: 
         print('là chuổi lặp ')
         break
-    else :
-        print('unknow - ko phải chuỗi lặp ')
+    else  :
+        print('ko phải chuỗi lặp')
         break
