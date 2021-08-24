@@ -18,5 +18,5 @@ def soduong():
     elif m > 1 and n > 4096:
         print('file cần bộ nhớ là ', k)
 
-
+soam()
 soduong()
